@@ -1,28 +1,36 @@
 import React, {useState} from 'react'; 
 import './App.css'; 
 import ProjectText from './ProjectText.js';
+import Menu from './Menu';
 
 function App() {
 
-const [resume, setResume] = useState(false);
-const [projects, setProjects] = useState(false);
+  const [resume, setResume] = useState(false);
+  const [projects, setProjects] = useState(false);
 
-function getProjects() {
-  setProjects(!projects);
-  setResume(false);
-}
+  function getProjects() {
+    setProjects(!projects);
+    setResume(false);
+  }
 
-function getResume() {
-  setResume(!resume);
-  setProjects(false);
-}
+  function getResume() {
+    setResume(!resume);
+    setProjects(false);
+  }
+
+
 
   return(
     <div className = 'landingPage'>
-      <h1 className='landingPageName'>🧙‍♀️ Welcome to my Portfolio 🧙‍♀️</h1>
       <div className='buttons'>
-        <button className = 'showResume' onClick={getResume}>Show Resume</button>
-        <button className = 'showProjects' onClick={getProjects}>Show Projects</button>
+        <button className = 'showResume' onClick={getResume}>Resume</button>
+        <button className = 'showProjects' onClick={getProjects}>Projects</button>
+        </div>
+        <Menu /> 
+        <h1 className='landingPageName'>HI. IM NIK.</h1>
+        <div className = "socials">
+            <button className = "gitHub"></button>
+            <button className = "linkedIn"></button>                  
         </div>
         <div className = {resume ? 'resumeText' : 'resumeTextHidden'}>
           <p1>Nothing here yet 😭</p1>

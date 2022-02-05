@@ -17,8 +17,9 @@
 .landingPageName {
   color: azure;
   position: fixed;
-  top:30px;
-  font-size: 50px;
+  top:10px;
+  font-family: 'Caveat', cursive;
+  font-size: 80px;
   text-align: top;
   align-self: auto;
 }
@@ -28,15 +29,14 @@
   padding: 20px;
   font-size: 23px;
   text-align: center;
-  border-width: 5px;
   background-color: rgba(255, 255, 255, 0.93);
   border: solid rgb(201, 75, 75);
   border-width: 4px;
   border-radius: 30px;
   display: flex;
-  height: 400px;
-  width: 700px;
-  top: 250px;
+  height: 60%;
+  width: 60%;
+  top: 280px;
   align-self: center;
   justify-content: space-around;
   position: fixed;
@@ -51,12 +51,14 @@
   width: 100px;
   position: relative;
   border-radius: 30px;
-  border-width: 5px;
+  border-width: 2px;
+  border-style:double;
   border-color: rgb(201, 75, 75);
   font-size: 20px;
-  background-color: rgb(54, 53, 53, 0.7);
-  color:lavenderblush;
+  background-color: rgb(54, 53, 53, 0.4);
+  color:azure;
   font-weight: bold;
+  z-index: -1;
 }
 
 .showProjects{
@@ -64,11 +66,12 @@
   width: 100px;
   position: relative;
   border-radius: 30px;
-  border-width: 5px;
+  border-width: 2px;
+  border-style:double;
   border-color: rgb(201, 75, 75);
   font-size: 20px;
-  background-color: rgb(54, 53, 53, 0.7);
-  color:lavenderblush;
+  background-color: rgb(54, 53, 53, 0.4);
+  color: azure;
   font-weight: bold;
 }
 
@@ -76,7 +79,7 @@
   height: 130px;
   width: 400px;
   position: fixed;
-  top: 120px;
+  top: 160px;
   display: inline-flex;
   justify-content: space-around;
   padding-left: 40px;
@@ -95,9 +98,9 @@
   border-width: 4px;
   border-radius: 30px;
   display: flex;
-  height: 400px;
-  width: 700px;
-  top: 250px;
+  height: 60%;
+  width: 60%;
+  top: 280px;
   align-self: center;
   justify-content: space-around;
   position: fixed;
@@ -119,4 +122,107 @@
 
 .text {
   line-height: 30px;
+}
+
+.menuBar {
+  background-color: rgba(0, 0, 0, 0.877);
+  height: 125px;
+  width: 100%;
+  position: fixed;
+  border-bottom: solid rgb(201, 75, 75);
+  border-width: 4px;
+  border-radius: 15px;
+}
+
+.menuButtons {
+  height: 100px;
+  top: 5px;
+  width: 35%;
+  position: fixed;
+  top: 10px;
+  display: inline-flex;
+  justify-content: space-around;
+  padding-left: 40px;
+  padding-right:40px; 
+  font-family: 'Roboto', sans-serif;
+  left: 15px;
+}
+
+.menuButtonsSub {
+  font-size: 37px;
+  background: transparent;
+  color: azure;
+  border: transparent;
+  font-family: 'Caveat', cursive;
+  position: relative;
+}
+
+.socials {
+  height: 100px;
+  width: 35%;
+  bottom: 5px;
+  justify-content: space-around;
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+
+}
+
+.gitHub {
+  background: url(githubLogo.png);
+  height: 70px;
+  width: 70px;
+  background-size: contain;
+  border-style: none;
+  position: fixed;
+  right: 40px;
+}
+
+.linkedIn {
+  background: url(linkedinLogo.png);
+  height: 70px;
+  width: 70px;
+  background-size: contain;
+  border-style: none;
+  position: fixed;
+  right: 110px;
+}
+
+.aboutText {
+  color: rgb(0, 0, 0);;
+  padding: 20px;
+  font-size: 23px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.98);
+  border: solid rgb(201, 75, 75);
+  border-width: 4px;
+  border-radius: 30px;
+  display: flex;
+  height: 80vh;
+  width: 80%;
+  top: 150px;
+  justify-content: space-around;
+  position: relative;
+  align-self: center;
+  margin: auto;
+  z-index: 1;
+}
+
+.contactText {
+  color: rgb(0, 0, 0);;
+  padding: 20px;
+  font-size: 23px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.98);
+  border: solid rgb(201, 75, 75);
+  border-width: 4px;
+  border-radius: 30px;
+  display: flex;
+  height: 80vh;
+  width: 80%;
+  top: 140px;
+  justify-content: space-around;
+  position: relative;
+  align-self: center;
+  margin: auto;
+  z-index: 1;
 }
