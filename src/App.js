@@ -19,13 +19,9 @@ function App() {
     setProjects(false);
   }
 
-  function openLinkedin() {
-    window.open("https://www.linkedin.com/in/niklas-harnish/");
-  }
+  function openLinkedin() {window.open("https://www.linkedin.com/in/niklas-harnish/");}
 
-  function openGithub() {
-    window.open("https://github.com/NikHarnish");
-  }
+  function openGithub() {window.open("https://github.com/NikHarnish");}
 
   return(
     <div className = 'landingPage'>
@@ -44,7 +40,7 @@ function App() {
         <div className= {projects ? 'centerButtonsText' : 'Hidden'}>
           <ProjectText />
         </div>
-        <Menu /> 
+        <Menu />
         <h1 className='landingPageName'>HI. IM NIK.</h1>
       </div>
 )}

@@ -160,19 +160,18 @@
   border: solid rgb(201, 75, 75);
   border-width: 4px;
   border-radius: 30px;
-  display: flex;
-  height: 80vh;
+  height: 80%;
   width: 80%;
   top: 150px;
   justify-content: space-around;
-  position: relative;
+  position: fixed;
   align-self: center;
-  margin: auto;
   z-index: -2;
+  left: 200px;
 }
 
 .text { 
-  line-height: 160%;
+  line-height: 170%;
 }
 
 .underLine {

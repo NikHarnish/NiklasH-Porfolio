@@ -7,11 +7,12 @@ function ResumeText() {
             <div className = "text">
                 <h2 className = "titlesOfText">Experience</h2>
                 <p>------------</p>
-                <p>I have experience in: Java, C, ReactJS (including HTML, CSS and Javascript)</p>
+                <p>I have experience in: Java, C, Database-Management with MySQL</p>
+                <p>and ReactJS (including HTML, CSS and Javascript)</p>
+                <br></br>
                 <p>I fluently speak both German & English</p>
                 <br></br>
-                <br></br>
-                <h2 className="titlesOfText">Education and Jobs</h2>
+                <h2 className="titlesOfText">Education and Work</h2>
                 <p>------------</p>
                 <p>Graduated from International School of Dusseldorf</p>
                 <p>Currently studying Computer Science at Lancaster University Leipzig</p>
