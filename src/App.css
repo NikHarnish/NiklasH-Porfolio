@@ -219,3 +219,15 @@
 .text { 
   line-height: 160%;
 }
+
+.underLine {
+  font-size: 37px;
+  background: transparent;
+  color: azure;
+  border: transparent;
+  font-family: 'Caveat', cursive;
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: rgb(201, 75, 75);
+  text-underline-offset: 7px;
+}
