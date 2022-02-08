@@ -38,10 +38,10 @@ function App() {
             <button className = "gitHub" onClick={openGithub}></button>
             <button className = "linkedIn" onClick={openLinkedin}></button>                  
         </div>
-        <div className = {resume ? 'resumeText' : 'Hidden'}>
+        <div className = {resume ? 'centerButtonsText' : 'Hidden'}>
           <ResumeText />
         </div>
-        <div className= {projects ? 'projectText' : 'Hidden'}>
+        <div className= {projects ? 'centerButtonsText' : 'Hidden'}>
           <ProjectText />
         </div>
         <Menu /> 

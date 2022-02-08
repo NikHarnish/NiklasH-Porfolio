@@ -23,8 +23,8 @@ function getContact() {
                 <button className = {about? "underLine " : "menuButtonsSub"} onClick={getAbout} id='aboutButton'>ABOUT</button>
                 <button className = {contact? "underLine " : "menuButtonsSub"} onClick={getContact}>CONTACT</button>
             </div> 
-            <div className = {about ? "aboutText" : "Hidden"}></div>
-            <div className = {contact ? "contactText" : "Hidden"}></div>
+            <div className = {about ? "menuBarText" : "Hidden"}></div>
+            <div className = {contact ? "menuBarText" : "Hidden"}></div>
         </div>
     );
 }
