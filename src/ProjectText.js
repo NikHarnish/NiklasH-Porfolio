@@ -4,7 +4,7 @@ import "./App.css";
 function ProjectText() {
     return(
         <div className = "projectTextDiv">
-            <h1 className = "titlesOfText">Projects</h1>
+            <h2 className = "titlesOfText">Projects</h2>
             <p>------------</p>
             <div className = "text">
                 <p>This website was made by myself, using ReactJs</p>

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css'; 
 import ProjectText from './ProjectText.js';
 import Menu from './Menu';
+import ResumeText from './ResumeText';
 
 function App() {
 
@@ -18,27 +19,33 @@ function App() {
     setProjects(false);
   }
 
+  function openLinkedin() {
+    window.open("https://www.linkedin.com/in/niklas-harnish/");
+  }
 
+  function openGithub() {
+    window.open("https://github.com/NikHarnish");
+  }
 
   return(
     <div className = 'landingPage'>
       <div className='buttons'>
         <button className = 'showResume' onClick={getResume}>Resume</button>
-        <button className = 'showProjects' onClick={getProjects}>Projects</button>
+        <button className = 'showProjects' onClick={getProjects}>Projects </button>
+        </div>
+        
+        <div className = "socials">
+            <button className = "gitHub" onClick={openGithub}></button>
+            <button className = "linkedIn" onClick={openLinkedin}></button>                  
+        </div>
+        <div className = {resume ? 'resumeText' : 'Hidden'}>
+          <ResumeText />
+        </div>
+        <div className= {projects ? 'projectText' : 'Hidden'}>
+          <ProjectText />
         </div>
         <Menu /> 
         <h1 className='landingPageName'>HI. IM NIK.</h1>
-        <div className = "socials">
-            <button className = "gitHub"></button>
-            <button className = "linkedIn"></button>                  
-        </div>
-        <div className = {resume ? 'resumeText' : 'resumeTextHidden'}>
-          <p1>Nothing here yet 😭</p1>
-        </div>
-        <div className= {projects ? 'projectText' : 'projectTextHidden'}>
-          <ProjectText />
-        </div>
       </div>
 )}
-
 export default App;

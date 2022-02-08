@@ -1,35 +1,31 @@
 import React, { useState } from "react";
 import "./App.js";
 
-
-
 function Menu() {
 
 const [about, setAbout] = useState(false);
-const [contact, setContact] = useState(false);
-
+const [contact, setContact] = useState(false);    
 
 function getAbout() {
-    if (contact === false) {
-    setAbout(!about);}
+    setAbout(!about);
+    setContact(false);
 }
 
 function getContact() {
-    if (about === false) {
-    setContact(!contact);}
+    setContact(!contact);
+    setAbout(false);
 }
 
+
     return(
-            <div className = "menuBar">
-                <div className = "menuButtons">
-                    <button className = "menuButtonsSub" onClick={getAbout}>ABOUT</button>
-                    <button className = "menuButtonsSub" onClick={getContact}>CONTACT</button>
-                </div> 
-                <div className = {about ? "aboutText" : "aboutTextHidden"}>
-                <div className = {contact ? "contactText" : "contactTextHidden"}></div>
-                </div>
-            </div>
-            
+        <div className = "menuBar">
+            <div className = "menuButtons">
+                <button className = "menuButtonsSub" onClick={getAbout} id='aboutButton'>ABOUT</button>
+                <button className = "menuButtonsSub" onClick={getContact}>CONTACT</button>
+            </div> 
+            <div className = {about ? "aboutText" : "Hidden"}></div>
+            <div className = {contact ? "contactText" : "Hidden"}></div>
+        </div>
     );
 }
 
