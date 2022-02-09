@@ -186,7 +186,7 @@
   text-underline-offset: 7px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .landingPageName {
     font-size: 40px;
   }
