@@ -7,12 +7,12 @@
 
 .landingPage {
   min-height: 100vh;
-  background: #000000;
   display: flex;
   justify-content: space-around;
   overflow: hidden;
   background: url("./images/starry.jpg");
 } 
+
 
 .landingPageName {
   color: azure;
@@ -184,4 +184,10 @@
   text-decoration: underline;
   text-decoration-color: rgb(201, 75, 75);
   text-underline-offset: 7px;
+}
+
+@media (max-width: 480px) {
+  .landingPageName {
+    font-size: 40px;
+  }
 }

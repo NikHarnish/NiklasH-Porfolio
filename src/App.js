@@ -1,4 +1,4 @@
-import React, {useState} from 'react'; 
+import React, {useEffect, useState} from 'react'; 
 import './App.css'; 
 import ProjectText from './ProjectText.js';
 import Menu from './Menu';
@@ -8,7 +8,7 @@ function App() {
 
   const [resume, setResume] = useState(false);
   const [projects, setProjects] = useState(false);
-
+ 
   function getProjects() {
     setProjects(!projects);
     setResume(false);
@@ -23,6 +23,7 @@ function App() {
 
   function openGithub() {window.open("https://github.com/NikHarnish");}
 
+  
   return(
     <div className = 'landingPage'>
       <div className='buttons'>
